@@ -34,6 +34,8 @@
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
     <script>
+        var serverip = "http://46.163.68.226:3001/";
+    
         document.getElementById("city").addEventListener("keypress", function(event){
             if(event.keyCode==13){
                 var xhttp = new XMLHttpRequest();
@@ -159,7 +161,7 @@
                         } 
                     }
                 };
-                xhttp.open("GET", "http://localhost:3001/advice/weather/"+document.getElementById("city").value, true);
+                xhttp.open("GET", serverip+"advice/weather/"+document.getElementById("city").value, true);
                 xhttp.send();
                
                

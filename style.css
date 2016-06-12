@@ -1,27 +1,69 @@
+body{
+   margin: 0px;
+}
+
 /* label color */
-   .input-field label {
-     color:#FFF;
-   }
-   /* label focus color */
-   .input-field input[type=text]:focus + label {
-     color:#FFF;
-   }
-   /* label underline focus color */
-   .input-field input[type=text]:focus {
-     border-bottom: 1px solid#FFF;
-     box-shadow: 0 1px 0 0#FFF;
-   }
-   /* valid color */
-   .input-field input[type=text].valid {
-     border-bottom: 1px solid#FFF;
-     box-shadow: 0 1px 0 0#FFF;
-   }
-   /* invalid color */
-   .input-field input[type=text].invalid {
-     border-bottom: 1px solid#FFF;
-     box-shadow: 0 1px 0 0#FFF;
-   }
-   /* icon prefix focus color */
-   .input-field .prefix.active {
-     color:#FFF;
-   }
+.input-field label {
+  color:#FFF;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color:#FFF;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid#FFF;
+  box-shadow: 0 1px 0 0#FFF;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid#FFF;
+  box-shadow: 0 1px 0 0#FFF;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid#FFF;
+  box-shadow: 0 1px 0 0#FFF;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color:#FFF;
+}
+
+#title {
+   text-align: center; 
+   width: 100%; 
+   position: absolute; 7
+   font-family: Verdana; 
+   color: white;
+}
+
+#city_container {
+   top: 120px; 
+   position: absolute; 
+   width: 100%;
+}
+
+#preloader {
+   display: none; 
+   position: absolute; 
+   top: 70%; 
+   left: 47%;
+}
+
+#image {
+   position: absolute;
+   width: 150px;
+   display: none;
+   top: 35%;
+   left: 45%;
+}
+
+#advicetext {
+   top: 60%; 
+   text-align: center; 
+   width: 100%; 
+   position: absolute; 
+   font-family: Verdana; 
+   color: white;
+}

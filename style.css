@@ -32,8 +32,9 @@ body{
 
 #docu_link {
    position: absolute;
-   right: 0px;
+   right: 10px;
    top: 0px;
+   color: white;
 }
 
 #title {

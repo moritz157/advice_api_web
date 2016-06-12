@@ -30,6 +30,12 @@ body{
   color:#FFF;
 }
 
+#docu_link {
+   position: absolute;
+   right: 0px;
+   top: 0px;
+}
+
 #title {
    text-align: center; 
    width: 100%; 

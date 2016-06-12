@@ -9,15 +9,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     </head>
     <body>
-        <h1 style="text-align: center; width: 100%; position: absolute; font-family: Verdana; color: white;">Advice-API</h1>
-        <div style="top: 120px; position: absolute; width: 100%;" class="row">
+        <h1 id="title">Advice-API</h1>
+        <div id="city_container" class="row">
             <div class="input-field col s8 m4 offset-s2 offset-m4">
                 <input value="" id="city" type="text" class="validate">
                 <label class="active" for="city">Your City</label>
             </div>
         </div>
           
-          <div style="display:none; position: absolute; top: 70%; left: 47%" id="preloader" class="preloader-wrapper big active">
+          <div id="preloader" class="preloader-wrapper big active">
             <div class="spinner-layer spinner-blue-only">
               <div class="circle-clipper left">
                 <div class="circle"></div>
@@ -28,16 +28,11 @@
               </div>
             </div>
           </div>
-        <img id="image" src="" style="position:absolute;width:150px;display:none;top:35%;left:45%;">
-        <h3 id="advicetext" style="top: 60%; text-align: center; width: 100%; position: absolute; font-family: Verdana; color: white;"></h3>
+        <img id="image" src="">
+        <h3 id="advicetext"></h3>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
     <script src="main.js"></script>
-    <style>
-        body{
-            margin: 0px;
-        }
-    </style>
 </html>

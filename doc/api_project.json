@@ -1,0 +1,13 @@
+{
+  "name": "weatheradvice",
+  "version": "1.0.0",
+  "description": "Advices what to wear",
+  "sampleUrl": false,
+  "apidoc": "0.2.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2016-06-12T08:09:02.912Z",
+    "url": "http://apidocjs.com",
+    "version": "0.16.1"
+  }
+}

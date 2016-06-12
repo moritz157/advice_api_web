@@ -1,0 +1,266 @@
+define({ "api": [
+  {
+    "type": "get",
+    "url": "/advice/all/:location",
+    "title": "Get advice for everything",
+    "name": "getAllAdvices",
+    "group": "Advice",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "location",
+            "description": "<p>The location to get the weather for</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "advicetext",
+            "description": "<p>Advice</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./app.js",
+    "groupTitle": "Advice"
+  },
+  {
+    "type": "get",
+    "url": "/advice/untis/",
+    "title": "Get untis advice (can the user sleep longer?)",
+    "name": "getUntisAdvice",
+    "group": "Advice",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "advicetext",
+            "description": "<p>An advice on sleeping longer (or better not) depending on the result from WebUntis</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./app.js",
+    "groupTitle": "Advice"
+  },
+  {
+    "type": "get",
+    "url": "/advice/weather/:location",
+    "title": "Get an weather-advice for the location",
+    "name": "getWeatherAdvice",
+    "group": "Advice",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "Location",
+            "description": "<p>The location for the advice</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "advicetext",
+            "description": "<p>An advice what to wear</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./app.js",
+    "groupTitle": "Advice"
+  },
+  {
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "optional": false,
+            "field": "varname1",
+            "description": "<p>No type.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "varname2",
+            "description": "<p>With type.</p>"
+          }
+        ]
+      }
+    },
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "./doc/main.js",
+    "group": "C__Users_Moritz_Documents_GitHub_schnarchbox_api_doc_main_js",
+    "groupTitle": "C__Users_Moritz_Documents_GitHub_schnarchbox_api_doc_main_js",
+    "name": ""
+  },
+  {
+    "type": "get",
+    "url": "/weather/:location",
+    "title": "Get the raw weather information of your location",
+    "name": "getWeatherAdvice",
+    "group": "Weather",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "Location",
+            "description": "<p>The location you want weather information for</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "location",
+            "description": "<p>The location you have requested</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "location.city",
+            "description": "<p>Your location's city</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "location.country",
+            "description": "<p>Your location's country</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "location.region",
+            "description": "<p>Your location's region</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "condition",
+            "description": "<p>The current weather condition</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "condition.code",
+            "description": "<p>The current weather code (documentation here: https://developer.yahoo.com/weather/documentation.html#codes)</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "condition.date",
+            "description": "<p>The current date</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "condition.temp",
+            "description": "<p>The current temperature in degrees Celsius</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "condition.text",
+            "description": "<p>The current weather-text</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "today",
+            "description": "<p>The average weather today</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "today.code",
+            "description": "<p>Today's weather code (documentation here: https://developer.yahoo.com/weather/documentation.html#codes)</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "today.date",
+            "description": "<p>Today's date</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "today.day",
+            "description": "<p>Today's day</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "today.low",
+            "description": "<p>Today's lowest temperature</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "today.high",
+            "description": "<p>Today's highest temperature</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "today.text",
+            "description": "<p>Today's weather-text</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./app.js",
+    "groupTitle": "Weather"
+  }
+] });
